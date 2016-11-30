@@ -1,0 +1,119 @@
+<style>
+a, input, h1, h2, h3, h4, h5, h6, p {
+    color: #bbb;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+a {
+    color: limegreen;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body, html, main {
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+br {
+    height: 1em;
+    font-size: inherit;
+}
+
+input, p {
+    font-size: 14px;
+    margin: 1px 0;
+}
+
+input {
+    background: none;
+    border: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    cursor: default;
+    outline: none;
+}
+
+p {
+    min-height: 1em;
+}
+
+.accent {
+    color: limegreen;
+    display: inline-block;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+#output {
+    word-wrap: break-word;
+}
+
+#input-container {
+    width: 100%;
+    display: flex;
+}
+
+#input-prefix {
+    white-space: nowrap;
+    overflow: visible;
+}
+
+#input-text {
+    width: 100%;
+}
+
+#content {
+    width: calc(100% - 32px);
+    left: 50%;
+    margin: 16px 0;
+    max-width: 800px;
+    padding: 16px;
+    position: absolute;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+</style>
+<title>WebUnix</title>
+<div id=content>
+<h2>WUNIX - WebUNIX. version: a0.5</h2>
+<p>Web emulator of UNIX terminal.</p>
+<br>
+<div id="output"></div>
+<div id="input-container">
+<span class="inline"><p class="accent" id="input-prefix"> </p></span>
+<input autocapitalize="off" autocomplete="off" autocorrect="off" autofocus id="input-text" spellcheck="false" type="text">
+</div>
+<!-- <script src="js/os/controller.js" type="text/javascript"></script>
+<script src="js/os/init.js"></script>
+<script src="js/os/model.js" type="text/javascript"></script>
+<script src="js/os/view.js" type="text/javascript"></script>
+<script src="js/os/std.js" type="text/javascript"></script> -->
+<script src="js/main.js"></script>
+<link rel="import" href="js/paks/pacman.js" id="packageManager">   
+</div>

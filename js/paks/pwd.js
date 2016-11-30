@@ -1,0 +1,4 @@
+(function() {
+    updateDirectoryString();
+    stdout(directoryString);
+}());
